@@ -1,13 +1,13 @@
 # End-to-End Vision Classification System — API (vision-classifier-api)
 
 **Production Computer Vision: 200‑Class Image Classification.**  
-Reproducible training + disciplined experiments + TorchScript export + FastAPI serving + React demo. *Portfolio piece demonstrating end-to-end production ML ownership for senior ML engineer roles.*
+Reproducible training + disciplined experiments + TorchScript export + FastAPI serving + React demo. 
 
 This repository is the **API + training pipeline** (GitHub repo: **vision-classifier-backend**). The React UI lives in the separate repo **vision-classifier-frontend**.
 
 **Proof points:** Top‑1 86.36% / Top‑5 96.75% *(best‑so‑far; run completion tracked)* · CPU p50 ~37 ms per image *(FastAPI, local benchmark)* · Dockerized + CI + clear run bookkeeping.
 
-**CTAs:** [Read the Report](REPORT.md) · [API Docs](https://solarevat-cv200.hf.space/docs) · Live Demo: link when frontend is deployed.
+**CTAs:** [Live Demo](https://vision-classifier-ui.vercel.app/) · [Read the Report](REPORT.md) · [API Docs](https://solarevat-cv200.hf.space/docs)
 
 ## Live API
 
