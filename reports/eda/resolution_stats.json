@@ -1,0 +1,15 @@
+{
+  "height": {
+    "max": 64.0,
+    "mean": 64.0,
+    "median": 64.0,
+    "min": 64.0
+  },
+  "num_samples": 10000,
+  "width": {
+    "max": 64.0,
+    "mean": 64.0,
+    "median": 64.0,
+    "min": 64.0
+  }
+}

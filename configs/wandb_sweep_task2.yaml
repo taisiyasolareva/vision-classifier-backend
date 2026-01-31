@@ -1,0 +1,56 @@
+program: python
+method: grid
+metric:
+  name: val_top1
+  goal: maximize
+
+command:
+  - ${env}
+  - PYTHONPATH=src
+  - python
+  - -m
+  - cv200.train
+  - --data-root
+  - ${env:DATA_ROOT}
+  - --task
+  - task2
+  - --pretrained
+  - --output-dir
+  - runs/wandb/${wandb.run.id}
+  - --wandb-project
+  - cv200
+  - ${args}
+
+parameters:
+  arch:
+    values: ["resnet50", "convnext_tiny"]
+  epochs:
+    value: 10
+  "batch-size":
+    values: [64, 128]
+  scheduler:
+    values: ["cosine"]
+  "warmup-epochs":
+    values: [3]
+  "fine-tune-strategy":
+    values: ["frozen", "partial", "full"]
+  "unfreeze-last-n":
+    values: [1, 2]
+  "lr-head":
+    values: [3e-4, 2e-4, 1e-4]
+  "lr-backbone":
+    values: [3e-5, 2e-5, 1e-5]
+  "weight-decay":
+    values: [1e-4, 5e-4]
+  "label-smoothing":
+    values: [0.0, 0.1]
+  seed:
+    value: 1337
+
+
+
+
+
+
+
+

@@ -1,0 +1,51 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Secrets (never commit)
+.env
+.env.*
+
+runs/
+artifacts/
+wandb/
+wandb_offline/
+.tmp/
+
+# Local datasets / large artifacts (DO NOT publish)
+data/
+dataset.zip
+*.zip
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Build artifacts (should not be committed)
+*.egg-info/
+dist/
+build/
+
+# Dataset-derived sample image grids (avoid redistributing restricted datasets)
+reports/eda/samples_grid.png
+
+# Tooling caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+.ipynb_checkpoints/
+.cursorrules
+
+# Full archive folder (internal notes, runbooks, learning notes — not for public commit)
+archive/
+
+
+

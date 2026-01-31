@@ -1,0 +1,33 @@
+task: "task2"
+arch: "resnet50"
+pretrained: false
+fine_tune_strategy: "full"
+unfreeze_last_n: 1
+
+# Keep it tiny: fast CPU smoke-run to verify the full fine-tuning pipeline.
+epochs: 1
+batch_size: 16
+num_workers: 0
+device: "cpu"
+
+image_size: 224
+
+# Smoke mode limits (deterministic subset selection handled in cv200.train)
+limit_train_samples: 64
+limit_val_samples: 64
+
+# Optimizer / LR (discriminative LRs)
+optimizer: "adamw"
+lr: 0.0001
+lr_head: 0.0001
+lr_backbone: 0.00005
+weight_decay: 0.0001
+
+# Keep schedulers off for smoke.
+scheduler: "none"
+warmup_epochs: 0
+label_smoothing: 0.0
+seed: 1337
+
+
+

@@ -1,0 +1,20 @@
+task: "task1"
+arch: "resnet18"
+# Task 1 baseline (timm-style, Task1-adapted):
+# - No pretraining, no resizing (enforced elsewhere)
+# - SGD + cosine + warmup + label smoothing are taken from timm's ImageNet training defaults
+epochs: 15
+batch_size: 128
+optimizer: "sgd"
+# timm default uses lr_base=0.1 at lr_base_size=256 with linear scaling.
+# With batch_size=128 (single-process), that implies lr ≈ 0.1 * (128 / 256) = 0.05.
+lr: 0.05
+momentum: 0.9
+weight_decay: 0.00002
+scheduler: "cosine"
+warmup_epochs: 5
+label_smoothing: 0.1
+image_size: 64
+seed: 1337
+
+

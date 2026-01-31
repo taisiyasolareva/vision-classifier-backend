@@ -1,0 +1,46 @@
+.git
+.github
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache
+.mypy_cache
+.ruff_cache
+.DS_Store
+
+# Local artifacts / data (exclude from image build context)
+data
+dataset.zip
+runs
+
+# Experiment tracking / scratch
+wandb
+wandb_offline
+.tmp
+artifacts
+
+# Large binaries
+*.zip
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# Reports are excluded intentionally to keep images small and
+# avoid accidental inclusion of dataset-derived artifacts.
+# If you want reports inside the container, remove this line:
+reports
+
+# Editor
+.idea
+.vscode
+
+
+
+
+
+
+
+

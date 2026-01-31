@@ -1,0 +1,31 @@
+Checkpoint: /content/cv200_work/checkpoint_best.pt
+Task: task2 | Arch: convnext_tiny | Image size: 224
+Val samples: 10000 | Wrong: 1290 | Top-1 acc (approx): 0.8710
+
+Top confusions (true -> pred) by count:
+  49 (class_049) -> 168 (class_168): 17
+  25 (class_025) -> 15 (class_015): 11
+  33 (class_033) -> 72 (class_072): 11
+  77 (class_077) -> 99 (class_099): 11
+  148 (class_148) -> 41 (class_041): 11
+  199 (class_199) -> 44 (class_044): 9
+  37 (class_037) -> 5 (class_005): 7
+  42 (class_042) -> 97 (class_097): 7
+  78 (class_078) -> 97 (class_097): 7
+  72 (class_072) -> 33 (class_033): 6
+
+Most error-prone classes by error rate (top 10):
+  class=39 name=class_039 err_rate=0.420 n=50
+  class=49 name=class_049 err_rate=0.420 n=50
+  class=33 name=class_033 err_rate=0.380 n=50
+  class=115 name=class_115 err_rate=0.360 n=50
+  class=148 name=class_148 err_rate=0.360 n=50
+  class=25 name=class_025 err_rate=0.340 n=50
+  class=118 name=class_118 err_rate=0.320 n=50
+  class=194 name=class_194 err_rate=0.320 n=50
+  class=199 name=class_199 err_rate=0.320 n=50
+  class=42 name=class_042 err_rate=0.300 n=50
+
+Notes:
+- Review top_errors.json to spot systematic label confusion or ambiguous images.
+- Review hardest_examples.json for borderline samples that the model barely gets right.

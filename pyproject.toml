@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=69.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cv200"
+version = "0.1.0"
+description = "Portfolio-grade image classification: train/eval/export/serve"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 100
+target-version = ["py39", "py310", "py311"]
+
+[tool.isort]
+profile = "black"
+line_length = 100
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+extend-exclude = ["*.ipynb"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W"]
+ignore = [
+    "E402", # allow imports after non-module-docstring strings (scripts often include banners)
+    "E501", # black doesn't wrap long strings (argparse help, etc.)
+    "F541", # f-strings without placeholders (harmless, keep scripts simple)
+    "N812", # allow conventional aliasing (e.g., torchvision.transforms.v2 as T)
+    "I001", # handled by isort (ruff import sorting is redundant here)
+]
+
+[tool.mypy]
+python_version = "3.9"
+warn_return_any = false
+warn_unused_configs = true
+ignore_missing_imports = true
+strict = false
+disable_error_code = [
+    # Torch/vision libs + dynamic configs often propagate Any; keep mypy as a light sanity check.
+    "no-any-return",
+    "import-untyped",
+    "call-overload",
+    "assignment",
+    "arg-type",
+    "var-annotated",
+]
+
+

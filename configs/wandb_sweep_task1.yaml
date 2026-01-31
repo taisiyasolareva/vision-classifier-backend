@@ -1,0 +1,50 @@
+program: python
+method: grid
+metric:
+  name: val_top1
+  goal: maximize
+
+# Use a command that works without editable installs.
+command:
+  - ${env}
+  - PYTHONPATH=src
+  - python
+  - -m
+  - cv200.train
+  - --data-root
+  - ${env:DATA_ROOT}
+  - --task
+  - task1
+  - --output-dir
+  - runs/wandb/${wandb.run.id}
+  - --wandb-project
+  - cv200
+  - ${args}
+
+parameters:
+  arch:
+    values: ["small_cnn", "resnet18"]
+  epochs:
+    value: 15
+  "batch-size":
+    values: [64, 128, 256]
+  lr:
+    values: [1e-3, 5e-4, 1e-4]
+  "weight-decay":
+    values: [1e-4, 5e-4]
+  scheduler:
+    values: ["cosine", "steplr"]
+  "warmup-epochs":
+    values: [0, 3]
+  "label-smoothing":
+    values: [0.0, 0.1]
+  seed:
+    value: 1337
+
+
+
+
+
+
+
+

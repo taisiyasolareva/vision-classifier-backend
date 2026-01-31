@@ -1,0 +1,17 @@
+# Minimal requirements for EDA script only
+# Install with: pip install -r requirements_eda_minimal.txt
+
+torch>=2.9.0,<3.0.0
+torchvision>=0.21.0,<1.0.0
+numpy>=2.2.0
+pillow>=11.0.0
+matplotlib>=3.7.0
+
+
+
+
+
+
+
+
+

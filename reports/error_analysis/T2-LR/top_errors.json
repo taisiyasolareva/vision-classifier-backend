@@ -1,0 +1,162 @@
+[
+  {
+    "confidence": 0.9999065399169922,
+    "image_path": "val/class_066/00048.jpg",
+    "predicted_class": 102,
+    "predicted_class_name": "class_102",
+    "true_class": 66,
+    "true_class_name": "class_066"
+  },
+  {
+    "confidence": 0.9998102784156799,
+    "image_path": "val/class_014/00003.jpg",
+    "predicted_class": 182,
+    "predicted_class_name": "class_182",
+    "true_class": 14,
+    "true_class_name": "class_014"
+  },
+  {
+    "confidence": 0.9997983574867249,
+    "image_path": "val/class_025/00017.jpg",
+    "predicted_class": 15,
+    "predicted_class_name": "class_015",
+    "true_class": 25,
+    "true_class_name": "class_025"
+  },
+  {
+    "confidence": 0.9996860027313232,
+    "image_path": "val/class_199/00019.jpg",
+    "predicted_class": 143,
+    "predicted_class_name": "class_143",
+    "true_class": 199,
+    "true_class_name": "class_199"
+  },
+  {
+    "confidence": 0.9995113611221313,
+    "image_path": "val/class_056/00029.jpg",
+    "predicted_class": 29,
+    "predicted_class_name": "class_029",
+    "true_class": 56,
+    "true_class_name": "class_056"
+  },
+  {
+    "confidence": 0.9995017051696777,
+    "image_path": "val/class_139/00013.jpg",
+    "predicted_class": 94,
+    "predicted_class_name": "class_094",
+    "true_class": 139,
+    "true_class_name": "class_139"
+  },
+  {
+    "confidence": 0.9994388222694397,
+    "image_path": "val/class_077/00018.jpg",
+    "predicted_class": 178,
+    "predicted_class_name": "class_178",
+    "true_class": 77,
+    "true_class_name": "class_077"
+  },
+  {
+    "confidence": 0.999396562576294,
+    "image_path": "val/class_046/00035.jpg",
+    "predicted_class": 141,
+    "predicted_class_name": "class_141",
+    "true_class": 46,
+    "true_class_name": "class_046"
+  },
+  {
+    "confidence": 0.9993571639060974,
+    "image_path": "val/class_111/00011.jpg",
+    "predicted_class": 121,
+    "predicted_class_name": "class_121",
+    "true_class": 111,
+    "true_class_name": "class_111"
+  },
+  {
+    "confidence": 0.9991877675056458,
+    "image_path": "val/class_079/00047.jpg",
+    "predicted_class": 87,
+    "predicted_class_name": "class_087",
+    "true_class": 79,
+    "true_class_name": "class_079"
+  },
+  {
+    "confidence": 0.9990707635879517,
+    "image_path": "val/class_060/00040.jpg",
+    "predicted_class": 153,
+    "predicted_class_name": "class_153",
+    "true_class": 60,
+    "true_class_name": "class_060"
+  },
+  {
+    "confidence": 0.9990214109420776,
+    "image_path": "val/class_157/00031.jpg",
+    "predicted_class": 184,
+    "predicted_class_name": "class_184",
+    "true_class": 157,
+    "true_class_name": "class_157"
+  },
+  {
+    "confidence": 0.9988586902618408,
+    "image_path": "val/class_039/00046.jpg",
+    "predicted_class": 128,
+    "predicted_class_name": "class_128",
+    "true_class": 39,
+    "true_class_name": "class_039"
+  },
+  {
+    "confidence": 0.9987882971763611,
+    "image_path": "val/class_033/00044.jpg",
+    "predicted_class": 30,
+    "predicted_class_name": "class_030",
+    "true_class": 33,
+    "true_class_name": "class_033"
+  },
+  {
+    "confidence": 0.9986804127693176,
+    "image_path": "val/class_122/00047.jpg",
+    "predicted_class": 156,
+    "predicted_class_name": "class_156",
+    "true_class": 122,
+    "true_class_name": "class_122"
+  },
+  {
+    "confidence": 0.9986282587051392,
+    "image_path": "val/class_054/00017.jpg",
+    "predicted_class": 82,
+    "predicted_class_name": "class_082",
+    "true_class": 54,
+    "true_class_name": "class_054"
+  },
+  {
+    "confidence": 0.9985791444778442,
+    "image_path": "val/class_011/00014.jpg",
+    "predicted_class": 182,
+    "predicted_class_name": "class_182",
+    "true_class": 11,
+    "true_class_name": "class_011"
+  },
+  {
+    "confidence": 0.9984117746353149,
+    "image_path": "val/class_143/00034.jpg",
+    "predicted_class": 138,
+    "predicted_class_name": "class_138",
+    "true_class": 143,
+    "true_class_name": "class_143"
+  },
+  {
+    "confidence": 0.9984042048454285,
+    "image_path": "val/class_195/00039.jpg",
+    "predicted_class": 110,
+    "predicted_class_name": "class_110",
+    "true_class": 195,
+    "true_class_name": "class_195"
+  },
+  {
+    "confidence": 0.998123824596405,
+    "image_path": "val/class_148/00003.jpg",
+    "predicted_class": 41,
+    "predicted_class_name": "class_041",
+    "true_class": 148,
+    "true_class_name": "class_148"
+  }
+]

@@ -1,0 +1,35 @@
+task: "task2"
+arch: "resnet50"
+pretrained: true
+fine_tune_strategy: "frozen"
+
+# Task 2 defaults (ImageNet backbone expects 224x224)
+image_size: 224
+
+# Training
+epochs: 10
+batch_size: 128
+num_workers: 4
+seed: 1337
+
+# Optimizer (head-only training => backbone LR unused, but keep explicit for auditability)
+optimizer: "adamw"
+lr: 0.0003
+lr_head: 0.0003
+lr_backbone: 0.00003
+weight_decay: 0.0001
+
+# Schedule
+scheduler: "cosine"
+warmup_epochs: 3
+
+# Regularization
+label_smoothing: 0.0
+
+
+
+
+
+
+
+

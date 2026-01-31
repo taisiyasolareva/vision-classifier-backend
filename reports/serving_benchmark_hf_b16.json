@@ -1,0 +1,31 @@
+{
+  "artifact_dir_hint": null,
+  "batch_size": 16,
+  "endpoint": "/predict_batch",
+  "errors": [],
+  "healthz": {
+    "error": null,
+    "payload": {
+      "artifact_dir": "/app/artifact",
+      "artifact_ok": true,
+      "status": "ok"
+    },
+    "url": "https://solarevat-cv200.hf.space/healthz"
+  },
+  "latency_ms": {
+    "max": 5262.861792001786,
+    "mean": 2738.245572420201,
+    "min": 1789.228584002558,
+    "p50": 2632.8753540019534,
+    "p95": 4133.9490671500225,
+    "p99": 5086.86506200076
+  },
+  "num_requests_completed": 50,
+  "num_requests_target": 50,
+  "throughput": {
+    "images_per_s": 5.842888413409054,
+    "requests_per_s": 0.3651805258380659
+  },
+  "total_images": 800,
+  "url": "https://solarevat-cv200.hf.space"
+}

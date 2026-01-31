@@ -1,0 +1,38 @@
+# Runtime dependencies
+#
+# PyTorch note (CPU vs GPU wheels):
+# - CPU-only installs typically work with plain `pip install -r requirements.txt`
+# - For CUDA wheels, follow the official PyTorch install selector for your CUDA version
+#   and install `torch/torchvision` accordingly (then install the rest of this file).
+#
+# Python note:
+# - For Python 3.14+, torch 2.9.0+ is required. For older Python versions, pin a compatible torch.
+torch>=2.9.0,<3.0.0
+torchvision>=0.21.0,<1.0.0
+torchmetrics>=1.6.1
+tqdm>=4.67.1
+numpy>=2.2.0
+pillow>=11.0.0
+matplotlib>=3.8.0
+
+# Serving
+fastapi==0.115.6
+uvicorn==0.34.0
+python-multipart==0.0.20
+
+# Optional experiment tracking (non-interactive)
+wandb==0.19.0
+
+# Config / YAML
+PyYAML==6.0.2
+
+# Development
+black==24.10.0
+isort==5.13.2
+ruff==0.8.0
+mypy==1.13.0
+pytest>=7.4.0
+pytest-cov>=4.1.0
+httpx>=0.27.0
+
+

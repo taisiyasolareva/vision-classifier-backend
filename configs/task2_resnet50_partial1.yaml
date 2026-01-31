@@ -1,0 +1,30 @@
+task: "task2"
+arch: "resnet50"
+pretrained: true
+fine_tune_strategy: "partial"
+unfreeze_last_n: 1
+
+image_size: 224
+epochs: 10
+batch_size: 128
+num_workers: 4
+seed: 1337
+
+optimizer: "adamw"
+lr: 0.0002
+lr_head: 0.0002
+lr_backbone: 0.00002
+weight_decay: 0.0001
+
+scheduler: "cosine"
+warmup_epochs: 3
+
+label_smoothing: 0.0
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+{
+  "artifact_dir_hint": null,
+  "batch_size": 1,
+  "endpoint": "/predict",
+  "errors": [],
+  "latency_ms": {
+    "max": 42.90145899994968,
+    "mean": 37.61778083000536,
+    "min": 34.58179100016423,
+    "p50": 37.1558124998046,
+    "p95": 41.4832024000134,
+    "p99": 42.5261658398631
+  },
+  "num_requests_completed": 100,
+  "num_requests_target": 100,
+  "throughput": {
+    "images_per_s": 26.538525692589545,
+    "requests_per_s": 26.538525692589545
+  },
+  "total_images": 100,
+  "url": "http://127.0.0.1:8000"
+}

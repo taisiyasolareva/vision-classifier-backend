@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      # Required: the server loads the model artifact from this directory.
+      MODEL_ARTIFACT_DIR: "/app/runs/task2/artifact"
+      LOG_LEVEL: "INFO"
+    volumes:
+      # Mount local model artifacts read-only (swap models without rebuilding)
+      - ./runs:/app/runs:ro
+
+
+
