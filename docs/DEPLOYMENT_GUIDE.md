@@ -3,7 +3,7 @@
 This guide documents the intended public deployment topology for **Production Computer Vision: 200‑Class Image Classification**:
 
 - **Backend (vision-classifier-api)**: FastAPI inference API deployed on Hugging Face Spaces (repo: **vision-classifier-backend**)
-- **Frontend (vision-classifier-ui)**: React + Vite UI (repo: **vision-classifier-frontend**) deployed on a static host (e.g., Vercel)
+- **Frontend (vision-classifier-ui)**: React + Vite UI (repo: **vision-classifier-frontend**) deployed on Vercel — **Live app:** [vision-classifier-ui.vercel.app](https://vision-classifier-ui.vercel.app/)
 
 ## Backend: Hugging Face Spaces (FastAPI)
 
@@ -31,6 +31,8 @@ The API loads an exported TorchScript artifact directory via `MODEL_ARTIFACT_DIR
 - `preprocess.json`
 
 ## Frontend: React + Vite (UI)
+
+- **Live app:** [https://vision-classifier-ui.vercel.app/](https://vision-classifier-ui.vercel.app/)
 
 The UI calls the backend API and supports **uploading an image** for inference.
 

@@ -21,6 +21,7 @@ This repo includes two benchmark contexts:
 ### Deployed (Hugging Face Spaces)
 
 - **API base**: `https://solarevat-cv200.hf.space`
+- **Live UI**: [https://vision-classifier-ui.vercel.app/](https://vision-classifier-ui.vercel.app/)
 - **Artifact identity (server-reported)**: `artifact_dir=/app/artifact`, `artifact_ok=true` (from `/healthz`, captured in `reports/serving_benchmark_hf_*.json`)
 - **Note**: includes network overhead + shared deployment resources, so it is not directly comparable to local CPU timings.
 

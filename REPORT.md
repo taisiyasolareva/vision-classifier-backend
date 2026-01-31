@@ -3,19 +3,19 @@
 **Project:** Production Computer Vision: 200‑Class Image Classification.  
 **Purpose:** One project demonstrating end-to-end production ML ownership — data → training → evaluation → error analysis → export → serving — for senior ML engineer roles. Blog-post style: concise, honest, evidence-driven.
 
-## Executive Summary (5–8 sentences)
+## Executive Summary 
 
 - **Problem**: 200-class image classification under unknown domain and strict constraints (Task 1/Task 2).
 - **What I built**: reproducible training + evaluation + error analysis + export + FastAPI serving.
 - **Best results**:
   - Task 1 (no pretrain, no resize): **best-so-far val_top1 = 16.89%** (`T1-B0`, **incomplete** at 6/15 epochs) → **FAIL** vs threshold 44%.
   - Task 2 (pretrain + resize): **best-so-far val_top1 = 86.36%** (`T2-LR`, **incomplete** at 8/15 epochs) → **PASS** vs threshold 84%. Best complete (as currently recorded): **83.58%** (`T2-ARCH-RUNNERUP-P1`, 2/2 epochs) → **near-pass**.
-- **Serving**: Live HF Space serves **T2-LR** (86.36% val_top1). Local CPU benchmarks: `POST /predict` p50 **37.16 ms**, p95 **41.48 ms**, throughput **26.54 img/s** (`reports/serving_benchmark.json`).
+- **Serving**: Live HF Space serves **T2-LR** (86.36% val_top1). **Live demo (UI):** [vision-classifier-ui.vercel.app](https://vision-classifier-ui.vercel.app/). Local CPU benchmarks: `POST /predict` p50 **37.16 ms**, p95 **41.48 ms**, throughput **26.54 img/s** (`reports/serving_benchmark.json`).
 - **Key learnings**:
   - Optimization details (LR schedule / regularization) can dominate gains early: `T2-LR` and `T2-REG` outperformed the 15-epoch partial-unfreeze baselines before completion.
   - “Best-so-far” can be misleading if runs stop early; I track **complete vs incomplete** explicitly and re-run promising configs to completion before finalizing.
 
-**What this demonstrates (senior ML engineer):** End-to-end ownership (no handoff gaps); rigor via run metadata and honest best-so-far vs best-complete; production mindset (TorchScript export, FastAPI, latency/throughput benchmarks); error analysis that drives next steps; reproducibility (CI, determinism) so a team could audit or extend; and explicit “what I’d do next” with trade-offs (early stopping, quantization, calibration).
+**What this demonstrates:** End-to-end ownership (no handoff gaps); rigor via run metadata and honest best-so-far vs best-complete; production mindset (TorchScript export, FastAPI, latency/throughput benchmarks); error analysis that drives next steps; reproducibility (CI, determinism) so a team could audit or extend; and explicit “what I’d do next” with trade-offs (early stopping, quantization, calibration).
 
 ## 1) Problem & Constraints
 
